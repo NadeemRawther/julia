@@ -4,9 +4,8 @@ Julia v1.2 Release Notes
 New language features
 ---------------------
 
-* The `extrema` function now accepts a function argument in the same manner as `minimum` and
-  `maximum` ([#30323]).
-* `hasmethod` can now check for matching keyword argument names ([#30712]).
+  * Argument splatting (`x...`) can now be used in calls to the `new` pseudo-function in
+    constructors ([#30577]).
 
 Multi-threading changes
 -----------------------
@@ -26,12 +25,15 @@ Command-line option changes
 New library functions
 ---------------------
 
-* `getipaddrs()` function returns all the IP addresses of the local machine ([#30349])
+  * `getipaddrs()` function returns all the IP addresses of the local machine ([#30349])
 
 Standard library changes
 ------------------------
 
-* Added `Base.hasproperty` and `Base.hasfield` ([#28850]).
+  * The `extrema` function now accepts a function argument in the same manner as `minimum` and
+    `maximum` ([#30323]).
+  * `hasmethod` can now check for matching keyword argument names ([#30712]).
+  * Added `Base.hasproperty` and `Base.hasfield` ([#28850]).
 
 #### LinearAlgebra
 
@@ -48,7 +50,7 @@ Standard library changes
 
 #### Dates
 
-* Fixed `repr` such that it displays `DateTime` as it would be entered in Julia ([#30200]).
+  * Fixed `repr` such that it displays `DateTime` as it would be entered in Julia ([#30200]).
 
 #### Miscellaneous
 
