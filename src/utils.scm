@@ -85,3 +85,9 @@
                                           (without (cdr alst) remove)))))
 
 (define (caddddr x) (car (cdr (cdr (cdr (cdr x))))))
+
+(define (table.clone t)
+  (let ((nt (table)))
+    (table.foldl (lambda (k v z) (put! nt k v))
+                 () t)
+    nt))
